@@ -11,6 +11,7 @@ addBtn.addEventListener("click", () => {
   const resultLiClass = ["bg-warning/20", "rounded", "p-2"];
   const taskItems = document.createElement("li");
   taskItems.innerHTML = count + ". " + inputValue;
+  alert(`Item ${count} added successfully`);
   count++;
 
   taskItems.classList.add(...resultLiClass);
@@ -25,3 +26,4 @@ addInput.addEventListener("keydown", (e) => {
     addBtn.click();
   }
 });
+
