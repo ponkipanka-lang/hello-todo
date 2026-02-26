@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      #result::-webkit-scrollbar {
+        display: none;
+      }
+      #result {
+        scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      class="flex items-center justify-center w-full min-h-screen bg-slate-800 px-5 shadow"
+    >
+      <div class="container max-w-md rounded-md bg-white p-5 md:p-10 min-h-80">
+        <h2
+          class="text-4xl text-center text-warning font-extrabold font-mono mb-4"
+        >
+          To-Do
+        </h2>
+
+        <div class="flex items-center w-full gap-2">
+          <input id="add-input" type="text" class="input outline-0 flex-1" />
+          <button id="add-btn" class="btn-warning btn">
+            <i class="pointer-events-none fas fa-plus"></i>
+          </button>
+        </div>
+
+        <ul
+          id="result"
+          class="mt-5 font-semibold w-full space-y-2 max-h-40 h-40 overflow-y-scroll"
+        >
+          <p class="text-md text-neutral-300 text-center pt-15" id="no-todo">
+            No To-do yet!
+          </p>
+        </ul>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
